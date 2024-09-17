@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Assignment</title>
+    <style>
+        .info-box {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Daily Quote</h2>
+    <p id="quote">Placeholder text for quote</p>
+
+    <div class="info-box">Name: John</div>
+    <div class="info-box">Hobby: Reading</div>
+    <div class="info-box">Occupation: Engineer</div>
+
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+        <li>Task 4</li>
+        <li>Task 5</li>
+    </ul>
+
+    <footer><span>Powered by Student's Webpage</span></footer>
+
+    <script>
+        // Manipulating DOM using different getElement methods
+
+        let q = document.getElementById("quote")
+        q.innerText="smile please....."
+        
+        let c=document.getElementsByClassName("info-box")
+        c[0].style.backgroundColor='rgb(89,161,201)'
+        c[1].style.backgroundColor='rgb(255,153,204)'
+        c[2].style.backgroundColor='rgb(204,153,255)'
+
+
+       let l = document.getElementsByTagName("li")
+       l[2].innerText='CHANGED'
+ 
+       let u = document.querySelector("footer span")
+       u.innerText+=' Have a nice day'
+
+
+</script>
+</body>
+</html>
